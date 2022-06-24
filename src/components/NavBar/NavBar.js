@@ -19,16 +19,16 @@ function NavBar() {
       <h1 className={s.heading}>#todo</h1>
       <div className={s.container}>
         <p
-          className={state.completed || state.active || s.activeLink}
+          className={(state.completed || state.active || s.activeLink).toString()}
           onClick={() => all()}
         >
           All
         </p>
-        <p className={state.active && s.activeLink} onClick={() => active()}>
+        <p className={(state.active && s.activeLink).toString()} onClick={() => active()}>
           Active
         </p>
         <p
-          className={state.completed && s.activeLink}
+          className={(state.completed && s.activeLink).toString()}
           onClick={() => completed()}
         >
           Completed
