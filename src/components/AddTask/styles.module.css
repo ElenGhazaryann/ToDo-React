@@ -1,0 +1,30 @@
+.container {
+  width: 600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container input {
+  width: 476px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #bdbdbd;
+  outline:none;
+}
+
+.container input::placeholder {
+  color: #828282;
+  padding-left: 10px;
+}
+
+.container button {
+  width: 109px;
+  height: 56px;
+  background: #2f80ed;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

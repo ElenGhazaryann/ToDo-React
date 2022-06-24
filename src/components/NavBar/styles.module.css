@@ -1,0 +1,32 @@
+.heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  /* font-weight: 600; */
+  /* line-height: 42px; */
+  /* letter-spacing: -0.045em; */
+  /* text-align: center; */
+}
+.container {
+  border-bottom: 1px solid #bdbdbd;
+  width: 600px;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container p {
+  font-style: normal;
+  width: 78px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  cursor: pointer;
+}
+
+.activeLink {
+  border-bottom: 4px solid #2f80ed;
+  border-radius: 4px 4px 0px 0px;
+}

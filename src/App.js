@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AddTask from "./components/AddTask";
+import AllTasks from "./components/AllTasks/AllTasks";
+import NavBar from "./components/NavBar";
+import { useCustomContext } from "./state";
 
 function App() {
+  const { state } = useCustomContext();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      {state.completed ? undefined : <AddTask />}
+      <AllTasks />
     </div>
   );
 }
